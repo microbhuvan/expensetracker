@@ -1,0 +1,130 @@
+.incexp{
+  display : flex;
+  flex-direction: row;
+  background-color : white;
+  align-items : center;
+  text-align : center;
+  border-radius : 20px;
+}
+
+.main{
+  
+  width : 110%;
+  margin : 0 auto;
+}
+
+.main::before{
+  background : url('/public/money-doodle-2.png');
+  opacity : 0.3;
+  z-index : -1;
+}
+
+.container{
+  padding : 10px;
+}
+
+.incexp > div {
+  flex : 1;
+  padding : 10px;
+}
+
+.incexp h4,
+.incexp p {
+  margin : 10px 0px 10px;
+}
+
+.incexp > div:first-child p{
+  color : green
+}
+
+.incexp > div:last-child p{
+  color : red;  
+}
+
+.input{
+  margin : 10px;
+  display : flex;
+  flex-direction : column;
+}
+
+.inputt{
+  padding : 7px;
+}
+
+.minus{
+  border-right : 5px solid red;
+}
+
+.plus{
+  border-right : 5px solid green;
+}
+
+li{
+  padding : 2px;
+  margin : 5px;
+}
+
+input{
+  padding : 5px;
+  border-radius : 20px;
+  border : none;
+}
+
+.submit{
+  width : 50%;
+  padding : 10px;
+  margin : 0 auto;
+  border-radius : 20px;
+  border : none;
+  background: #5e5df0; 
+  color : white;
+  box-shadow : #5e5df0 0 10px 10px -10px;
+  display : block;
+  transition : background 0.5s ease;
+}
+
+.submit:hover{
+  background : linear-gradient(45deg,#5e5df0,purple);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.header{
+  margin : 0;
+}
+
+li{
+  list-style-type : none;
+  display : flex;
+  justify-content : space-between;
+}
+
+ul{
+  padding : 0;
+}
+
+.card{
+  display : flex;
+  background : white;
+  margin : 5px;
+  border-end-start-radius : 20px;
+}
+
+.card > li{
+  flex-grow : 1;
+}
+
+.xb{
+  display : none;
+  background-color : rgba(255,0,0,0.7);
+  border : none;
+  text-align : center;
+  border-radius : 10px;
+  width : 10%;
+}
+
+.card:hover {
+  .xb{
+    display : block;
+  }
+}
+
